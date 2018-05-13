@@ -33,7 +33,7 @@ function createIssue() {
     body: JSON.stringify(postData),
     headers: {
       Authorization: `token ${getToken()}`,
-      Accept: "application/json"
+      // Accept: "application/json"
     }
   }).then(res => getIssues())
 
