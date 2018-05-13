@@ -9,14 +9,14 @@ function Issue(attributes) {
 }
 
 function Repo(attributes) {
-  this.url = attributes.url 
+  this.url = attributes.url
 }
 
-fetch('https://api.github.com/user/repos', {
-  headers: {
-    Authorization: `token ${token}`
-  }
-}).then(res => res.json()).then(json => console.log(json));
+// fetch('https://api.github.com/user/repos', {
+//   headers: {
+//     Authorization: `token ${token}`
+//   }
+// }).then(res => res.json()).then(json => console.log(json));
 
 
 function getIssues() {
