@@ -1,5 +1,5 @@
 function getIssues() {
-  fetch('https://api.github.com/repos/bretburau/javascript-fetch-lab/issues', {
+  fetch('https://api.github.com/repos/rjspitkovsky/javascript-fetch-lab/issues', {
     headers: {
       Authorization: `token ${getToken()}`
     }
