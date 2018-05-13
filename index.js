@@ -1,6 +1,6 @@
-// const token = ''
-// const api = 'https://api.github.com/'
-// const fork = `${name}/javascript-fetch-lab`
+const token = ''
+const api = 'https://api.github.com/'
+const fork = `${name}/javascript-fetch-lab`
 
 
 // fetch('https://api.github.com/user/repos', {
