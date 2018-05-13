@@ -22,18 +22,15 @@ function showIssues(json) {
 function createIssue() {
   let title = document.getElementById('title').value;
   let body = document.getElementById('body').value;
-  // let url = document.getElementById('link').getAttribute('href');
   let postData = {
     title: title,
     body: body
   }
-  // console.log(JSON.stringify(postData))
   fetch('https://api.github.com/repos/rjspitkovsky/javascript-fetch-lab/issues', {
     method: 'post',
     body: JSON.stringify(postData),
     headers: {
       Authorization: `token ${getToken()}`,
-      // Accept: "application/json"
     }
   }).then(res => getIssues())
 
