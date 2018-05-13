@@ -23,7 +23,8 @@ function createIssue() {
 }
 
 function showResults(json) {
-
+  result = `<a href="${json.html_url}">${json.name}</a>`
+  $('#results').html(result
 }
 
 function forkRepo() {
