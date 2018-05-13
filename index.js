@@ -27,8 +27,8 @@ function createIssue() {
     title: title,
     body: body
   }
-  console.log(JSON.stringify(postData))
-  fetch('https://api.github.com/repos/bretburau/javascript-fetch-lab/issues', {
+  // console.log(JSON.stringify(postData))
+  fetch('https://api.github.com/repos/rjspitkovsky/javascript-fetch-lab/issues', {
     method: 'post',
     body: JSON.stringify(postData),
     headers: {
