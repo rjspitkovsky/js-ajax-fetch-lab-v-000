@@ -2,6 +2,16 @@ const token = ''
 const api = 'https://api.github.com/'
 const fork = `${name}/javascript-fetch-lab`
 
+function Issue(attributes) {
+  this.title = attributes.title
+  this.body = attributes.body
+  this.url = attributes.url
+}
+
+function Repo(attributes) {
+  this.url = attributes.url 
+}
+
 fetch('https://api.github.com/user/repos', {
   headers: {
     Authorization: `token ${token}`
