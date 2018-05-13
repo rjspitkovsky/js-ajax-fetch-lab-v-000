@@ -25,12 +25,14 @@ function getIssues() {
 }
 
 function showIssues(json) {
+  return `<p><strong>${json.title}</strong> - ${json.body}</p>`
 }
 
 function createIssue() {
 }
 
 function showResults(json) {
+  
 }
 
 function forkRepo() {
